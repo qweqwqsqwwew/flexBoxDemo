@@ -1,0 +1,3 @@
+rootProject.name = 'flexboxDemo'
+
+include ':app'
