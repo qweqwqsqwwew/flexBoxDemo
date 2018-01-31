@@ -446,6 +446,8 @@ const styles = StyleSheet.create({
 */
 
 
+
+/*
 //test11  布局-justifyContent   center：伸缩项目向一行的中间位置靠齐
 
 export default class TestRN extends Component {
@@ -469,6 +471,162 @@ const styles = StyleSheet.create({
         backgroundColor:'blue',
         flex:1,
         justifyContent:'center'
+    },
+
+    style1:{
+        backgroundColor:'red',
+        width:60,
+        height:60
+    },
+    style2: {
+        backgroundColor: 'yellow',
+        width: 60,
+        height: 60
+
+    },
+    style3:{
+        backgroundColor:'green',
+        width:60,
+        height:60
+    }
+
+});
+
+*/
+
+
+
+/*
+//test12  布局-justifyContent   center：伸缩项目向一行的中间位置靠齐
+
+export default class TestRN extends Component {
+
+    render() {
+        return (
+
+            <View style={styles.container}>
+                <View style={styles.style1}></View>
+                <View style={styles.style2}></View>
+                <View style={styles.style3}></View>
+
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+
+    container:{
+        backgroundColor:'blue',
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+
+    style1:{
+        backgroundColor:'red',
+        width:60,
+        height:60
+    },
+    style2: {
+        backgroundColor: 'yellow',
+        width: 60,
+        height: 60
+
+    },
+    style3:{
+        backgroundColor:'green',
+        width:60,
+        height:60
+    }
+
+});
+
+*/
+
+/*
+//test13  flexWrap（默认情况下，项目都排在一条轴线上，flex-wrap属性定义如果一条轴线排不下，如何换行）
+
+export default class TestRN extends Component {
+
+    render() {
+        return (
+
+            <View style={styles.container}>
+                <View style={styles.style1}></View>
+                <View style={styles.style2}></View>
+                <View style={styles.style3}></View>
+                <View style={styles.style1}></View>
+                <View style={styles.style2}></View>
+                <View style={styles.style3}></View>
+                <View style={styles.style1}></View>
+                <View style={styles.style2}></View>
+                <View style={styles.style3}></View>
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+
+    container:{
+        backgroundColor:'blue',
+        flex:1,
+        flexDirection:'row',
+        flexWrap:'nowrap'
+    },
+
+    style1:{
+        backgroundColor:'red',
+        width:60,
+        height:60
+    },
+    style2: {
+        backgroundColor: 'yellow',
+        width: 60,
+        height: 60
+
+    },
+    style3:{
+        backgroundColor:'green',
+        width:60,
+        height:60
+    }
+
+});
+
+*/
+
+
+//test14  flexWrap（wrap：换行，第一行在上方）
+
+export default class TestRN extends Component {
+
+    render() {
+        return (
+
+            <View style={styles.container}>
+                <View style={styles.style1}></View>
+                <View style={styles.style2}></View>
+                <View style={styles.style3}></View>
+                <View style={styles.style1}></View>
+                <View style={styles.style2}></View>
+                <View style={styles.style3}></View>
+                <View style={styles.style1}></View>
+                <View style={styles.style2}></View>
+                <View style={styles.style3}></View>
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+
+    container:{
+        backgroundColor:'blue',
+        flex:1,
+        flexDirection:'row',
+        flexWrap:'wrap'
     },
 
     style1:{
